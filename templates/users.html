@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+    <h1>Тут представлены никнеймы пользователей в алфавитном порядке</h1>
+    {% for el in users %}
+        <div class="p-2 text-dark">
+          <p>{{ el.name}}</p>
+          <p><b>{{ el.password }}</b></p>
+        </div>
+    {% endfor %}
+</body>
+</html>

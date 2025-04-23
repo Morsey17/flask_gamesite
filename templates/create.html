@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title%}
+О ГОМЕКАХ!!!
+{% endblock %}
+
+{% block body%}
+<div class="container mt-5">
+    <h1>Добавление кого-то</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введи имя, шалава"><br>
+        <input type="submit" class="btn btn-success" value="+"><br>
+    </form>
+</div>
+{% endblock %}
